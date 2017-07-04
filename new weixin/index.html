@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+		* {
+				margin: 0;
+			}
+			
+			body,
+			html {
+				height: 100%;
+				width: 100%;
+			}
+			
+			#containtes {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: space-between;
+				flex-flow: column;
+			}
+			
+			#header {
+				height: 75px;
+				flex-flow: row;
+			}
+			
+			#header-one {
+				height: 30px;
+				background-color: #333333;
+				display: flex;
+			}
+			
+			#header-two {
+				height: 38px;
+				display: flex;
+				background-color: #444444;
+			}
+			
+			#two-one {
+				height: 28px;
+				width: 80%;
+				align-items: center;
+				margin-top: 8px;
+				margin-left: 12px;
+				color: white;
+				font-family: "微软雅黑";
+			}
+			
+			#two-two {
+				height: 25px;
+				width: 10%;
+			
+				background: url(img/搜索-01.png) no-repeat;
+				background-size: 22px;
+				margin: 5px;
+			
+			}
+			
+			#two-three {
+				height: 25px;
+				width: 10%;
+				
+				background:url(img/加-02.png)no-repeat ;
+				background-size: 20px;
+				margin: 5px;
+
+			}
+			
+			#one-one {
+				height: 28px;
+				width: 30%;
+				/*border: solid 1px red;*/
+				color: white;
+				font-size: 11px;
+				align-content: center;
+				line-height: 28px;
+				margin-left: 5px;
+			}
+			
+			#one-two {
+				height: 28px;
+				width: 40%;
+				/*border: solid 1px red;*/
+			}
+			
+			#one-three {
+				height: 28px;
+				width: 40%;
+				/*border: solid 1px red;*/
+			}
+			
+			#battery {
+				height: 28px;
+				width: 30%;
+				/*	border: solid 1px red;*/
+				display: flex;
+				align-items: center;
+				align-content: center;
+				justify-content: flex-end;
+				font-family: "微软雅黑";
+				font-size: 11px;
+				color: white;
+				margin-right: 2px;
+			}
+			
+			#battery-top {
+				height: 9px;
+				width: 18px;
+				border: solid 1px white;
+				align-items: center;
+				justify-content: center;
+				margin-left: 3px;
+			}
+			
+			#dl {
+				height: 9px;
+				width: 4px;
+				background-color: red;
+			}
+			
+			#battery-bottom {
+				height: 6px;
+				width: 1px;
+				border: solid 1px white;
+				margin-right: 5px;
+				font-family: "微软雅黑";
+				font-size: 10px;
+			}
+		}
+		#one {
+			width: 100%;
+			height: 45px;
+			border: solid 1px red;
+		}
+		#wrap {
+				
+				height: 100%;
+				flex-grow: 1;
+				overflow-y: scroll;
+		}
+		#list
+		{
+			display: flex;
+			margin: 0 auto;
+			flex-flow: column;
+	        overflow-y: scroll;
+	        width: 100%;
+	        border: solid 1px red;
+	        height: 500px;
+	        
+			
+		}
+		.content
+		{
+			margin: 0;
+			justify-content: space-between;
+	        align-items: center;
+			height: 60px;
+			border: solid 1px red;
+			background-color: #FAFAFA;
+			display: flex;
+			
+		}
+		.content-left
+		{
+			width: 52PX; height: 52PX;
+			border: solid 1px red;
+		}
+		.content-left img
+		{
+			height: 52px;
+			width: 52px;
+			border-radius: 6px;  /*圆角*/
+		}
+		.content-center
+		{
+			width:95%;
+			height: 52px;
+			border: solid 1px red;
+		}
+		.conter-top
+		{
+			height: 25px;
+			border: solid 1px red;
+			font-family: "微软雅黑";
+			font-size: 15px;
+			
+		}
+		</style>
+	</head>
+
+	<body>
+		<div id="containtes">
+			<div id="header">
+				<div id="header-one">
+					<div id="one-one">中国电信4G <img src="img/信号.png" height="10" width="12"></div>
+					<div id="one-two">
+						<div id="three"></div>
+					</div>
+					<div id="battery">下午1:10 15%
+						<div id="battery-top">
+							<div id="dl"></div>
+						</div>
+						<div id="battery-bottom"></div>
+					</div>
+				</div>
+				<div id="header-two">
+					<div id="two-one"><b>微信</b></div>
+					<div id="two-two">
+
+					</div>
+					<div id="two-three">
+
+					</div>
+				</div>
+			</div>
+			<div id="wrap">
+				<div id="list">
+					<div class="content">
+					<div class="content-left">
+						<img src="img/01.jpg">
+					</div>
+					<div class="content-center">
+						<div class="conter-top">小可爱</div>
+						<div class="conter-bottom"></div>
+					</div>
+					<div class="time"></div>
+					</div>
+					
+				</div>
+			</div>
+			<div id="menu"></div>
+		</div>
+	</body>
+
+</html>
